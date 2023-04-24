@@ -95,15 +95,19 @@
         },
         {
             "url": "https://agit.ai/nohe2001/TVBox/raw/branch/TVBox/qj0715.json",
-            "name": "未命名路线1"
+            "name": "有线路欢迎投稿"
         },
         {
             "url": "https://gitee.com/dfkdnfdnfd/config/raw/master/xpg.json",
-            "name": "小苹果路线"
+            "name": "作者QQ33590764"
         },
         {
             "url": "http://cdn.qiaoji8.com/tvbox.json",
-            "name": "未命名线路2"
+            "name": "未命名线路3"
+        },
+        {
+            "url": "33590764",
+            "name": "作者QQ33590764"
         },
         {
             "url": "https://tvbox.evai.pl/x6.json",
