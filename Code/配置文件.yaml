@@ -19,7 +19,7 @@ dns:
   fallback: [https://101.101.101.101/dns-query, https://public.dns.iij.jp/dns-query, https://208.67.220.220/dns-query]
   fallback-filter: {geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32, 223.75.236.241/32, 182.43.124.6/32, 106.74.25.198/32], domain: [+.bianyuan.xyz, +.happynothings031.xyz, +.jsdelivr.net, +.proton.me]}
 proxies:
-  - {name: Tube, server: 120.232.153.55, port: 50138, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: 44725367:RDxCLS, obfs-param: "", udp: true}
+  - {name: Tube, server: 120.232.153.55, port: 50138, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: 44802720:wYwL4k, obfs-param: "", udp: true}
   - {name: Dushe7.8, server: 36.151.192.203, port: 18682, type: trojan, password: VJONoUvl, sni: 183.232.139.22, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
