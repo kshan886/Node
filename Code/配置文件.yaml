@@ -100,14 +100,14 @@ proxy-groups:
     proxies:
       - REJECT
       - DIRECT
-#  - name: 🐟 漏网之鱼
-#    type: select
-#    proxies:
-#      - 🔰 节点选择
-#      - 🎯 全球直连
-#      - ♻️ 自动选择
-#      - Tube
-#      - Dushe7.8
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🔰 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - Tube
+      - Dushe7.8
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -10345,4 +10345,4 @@ rules:
   - DOMAIN-KEYWORD,Thunder,🎯 全球直连
   - DOMAIN-KEYWORD,XLLiveUD,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
-#  - MATCH,🐟 漏网之鱼
+  - MATCH,🐟 漏网之鱼
