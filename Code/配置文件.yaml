@@ -28,14 +28,14 @@ proxy-groups:
 #      - ♻️ 自动选择
       - 🎯 全球直连
       - Tube
-      - Dushe7.8
+      - Dushe25
 #  - name: ♻️ 自动选择
 #    type: url-test
 #    url: http://www.gstatic.com/generate_204
 #    interval: 300
 #    proxies:
 #      - Tube
-#      - Dushe7.8
+#      - Dushe25
 #  - name: 🎥 NETFLIX
 #    type: select
 #    proxies:
@@ -43,7 +43,7 @@ proxy-groups:
 #      - ♻️ 自动选择
 #      - 🎯 全球直连
 #      - Tube
-#      - Dushe7.8
+#      - Dushe25
 #  - name: ⛔️ 广告拦截
 #    type: select
 #    proxies:
@@ -63,7 +63,7 @@ proxy-groups:
 #      - ♻️ 自动选择
       - 🎯 全球直连
       - Tube
-      - Dushe7.8
+      - Dushe25
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -75,14 +75,14 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - Tube
-      - Dushe7.8
+      - Dushe25
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - Tube
-      - Dushe7.8
+      - Dushe25
 #  - name: 🍎 苹果服务
 #    type: select
 #    proxies:
@@ -90,7 +90,7 @@ proxy-groups:
 #      - 🎯 全球直连
 #      - ♻️ 自动选择
 #      - Tube
-#      - Dushe7.8
+#      - Dushe25
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -107,7 +107,7 @@ proxy-groups:
       - 🎯 全球直连
 #      - ♻️ 自动选择
       - Tube
-      - Dushe7.8
+      - Dushe25
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
