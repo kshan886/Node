@@ -19,8 +19,8 @@ dns:
   fallback: [https://101.101.101.101/dns-query, https://public.dns.iij.jp/dns-query, https://208.67.220.220/dns-query]
   fallback-filter: {geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32, 223.75.236.241/32, 182.43.124.6/32, 106.74.25.198/32], domain: [+.bianyuan.xyz, +.happynothings031.xyz, +.jsdelivr.net, +.proton.me]}
 proxies:
-  - {name: Tube, server: 120.232.153.59, port: 50132, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: 64875860:hj7jn5, obfs-param: "", udp: true}
-  - {name: Dushe08, server: 36.150.215.141, port: 33681, type: trojan, password: CUciWCxz, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
+  - {name: Tube, server: 120.232.153.59, port: 50137, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: 66317704:3RxBz6, obfs-param: "", udp: true}
+  - {name: Dushe19, server: 36.151.251.18, port: 4861, type: trojan, password: CUciWCxz, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -28,14 +28,14 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - Tube
-      - Dushe08
+      - Dushe19
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - Tube
-      - Dushe08
+      - Dushe19
 #  - name: 🎥 NETFLIX
 #    type: select
 #    proxies:
@@ -43,7 +43,7 @@ proxy-groups:
 #      - ♻️ 自动选择
 #      - 🎯 全球直连
 #      - Tube
-#      - Dushe08
+#      - Dushe19
 #  - name: ⛔️ 广告拦截
 #    type: select
 #    proxies:
@@ -63,7 +63,7 @@ proxy-groups:
 #      - ♻️ 自动选择
       - 🎯 全球直连
       - Tube
-      - Dushe08
+      - Dushe19
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -75,14 +75,14 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - Tube
-      - Dushe08
+      - Dushe19
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - Tube
-      - Dushe08
+      - Dushe19
 #  - name: 🍎 苹果服务
 #    type: select
 #    proxies:
@@ -90,7 +90,7 @@ proxy-groups:
 #      - 🎯 全球直连
 #      - ♻️ 自动选择
 #      - Tube
-#      - Dushe08
+#      - Dushe19
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -107,7 +107,7 @@ proxy-groups:
       - 🎯 全球直连
 #      - ♻️ 自动选择
       - Tube
-      - Dushe08
+      - Dushe19
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
