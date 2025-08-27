@@ -21,7 +21,6 @@ dns:
 proxies:
   - {name: Tube, server: 120.232.153.59, port: 50137, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: 66317704:3RxBz6, obfs-param: "", udp: true}
   - {name: Dushe27, server: 36.156.102.125, port: 34041, type: trojan, password: nTezQoTj, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: Xinxin, server: 203.198.248.122, port: 443, type: trojan, password: 552f5565287637865cd7fee001c63c89, ni: 23.45.86.28, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -30,7 +29,6 @@ proxy-groups:
       - 🎯 全球直连
       - Tube
       - Dushe27
-      - Xinxin
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -38,7 +36,6 @@ proxy-groups:
     proxies:
       - Tube
       - Dushe27
-      - Xinxin
 #  - name: 🎥 NETFLIX
 #    type: select
 #    proxies:
@@ -67,7 +64,6 @@ proxy-groups:
       - 🎯 全球直连
       - Tube
       - Dushe27
-      - Xinxin
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -80,7 +76,6 @@ proxy-groups:
       - 🔰 节点选择
       - Tube
       - Dushe27
-      - Xinxin
   - name: 📲 电报信息
     type: select
     proxies:
@@ -88,7 +83,6 @@ proxy-groups:
       - 🎯 全球直连
       - Tube
       - Dushe27
-      - Xinxin
 #  - name: 🍎 苹果服务
 #    type: select
 #    proxies:
