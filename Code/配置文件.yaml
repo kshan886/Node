@@ -20,10 +20,8 @@ dns:
   fallback-filter: {geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32, 223.75.236.241/32, 182.43.124.6/32, 106.74.25.198/32], domain: [+.bianyuan.xyz, +.happynothings031.xyz, +.jsdelivr.net, +.proton.me]}
 proxies:
   - {name: Tube, server: 120.232.153.59, port: 50130, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: 66999002:sfc2Gl, obfs-param: "", udp: true}
-  - {name: Dushe28, server: 58.152.30.26, port: 443, type: trojan, password: nTezQoTj, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: Manguo, server: 36.156.102.115, port: 194, type: trojan, password: 5fd355da67e5438fd35ace8835ffc516, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: Manguo2, server: 36.150.215.138, port: 1655, type: trojan, password: 5fd355da67e5438fd35ace8835ffc516, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: Manguo3, server: 36.156.102.115, port: 10682, type: trojan, password: 5fd355da67e5438fd35ace8835ffc516, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
+  - {name: Dushe31, server: 36.151.192.242, port: 1251, type: trojan, password: WFzqEviJ, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
+  - {name: Manguo, server: 36.151.195.112, port: 33681, type: trojan, password: 5fd355da67e5438fd35ace8835ffc516, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
   - {name: Xiaoyu, server: 144.202.54.42, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
 proxy-groups:
   - name: 🔰 节点选择
@@ -32,10 +30,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - Tube
-      - Dushe28
+      - Dushe31
       - Manguo
-      - Manguo2
-      - Manguo3
       - Xiaoyu
   - name: ♻️ 自动选择
     type: url-test
@@ -43,10 +39,8 @@ proxy-groups:
     interval: 300
     proxies:
       - Tube
-      - Dushe28
+      - Dushe31
       - Manguo
-      - Manguo2
-      - Manguo3
       - Xiaoyu
 #  - name: 🎥 NETFLIX
 #    type: select
@@ -55,7 +49,7 @@ proxy-groups:
 #      - ♻️ 自动选择
 #      - 🎯 全球直连
 #      - Tube
-#      - Dushe28
+#      - Dushe31
 #  - name: ⛔️ 广告拦截
 #    type: select
 #    proxies:
@@ -75,10 +69,8 @@ proxy-groups:
 #      - ♻️ 自动选择
       - 🎯 全球直连
       - Tube
-      - Dushe28
+      - Dushe31
       - Manguo
-      - Manguo2
-      - Manguo3
       - Xiaoyu
   - name: 🌏 国内媒体
     type: select
@@ -91,10 +83,8 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - Tube
-      - Dushe28
+      - Dushe31
       - Manguo
-      - Manguo2
-      - Manguo3
       - Xiaoyu
   - name: 📲 电报信息
     type: select
@@ -102,10 +92,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - Tube
-      - Dushe28
+      - Dushe31
       - Manguo
-      - Manguo2
-      - Manguo3
       - Xiaoyu
 #  - name: 🍎 苹果服务
 #    type: select
@@ -114,7 +102,7 @@ proxy-groups:
 #      - 🎯 全球直连
 #      - ♻️ 自动选择
 #      - Tube
-#      - Dushe28
+#      - Dushe31
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -131,10 +119,8 @@ proxy-groups:
       - 🎯 全球直连
 #      - ♻️ 自动选择
       - Tube
-      - Dushe28
+      - Dushe31
       - Manguo
-      - Manguo2
-      - Manguo3
       - Xiaoyu
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
