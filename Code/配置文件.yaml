@@ -20,8 +20,8 @@ dns:
   fallback-filter: {geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32, 223.75.236.241/32, 182.43.124.6/32, 106.74.25.198/32], domain: [+.bianyuan.xyz, +.happynothings031.xyz, +.jsdelivr.net, +.proton.me]}
 proxies:
   - {name: Tube, server: 120.232.153.59, port: 50130, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: 66999002:sfc2Gl, obfs-param: "", udp: true}
-  - {name: Dushe07, server: 36.151.251.18, port: 4861, type: trojan, password: KxEPOndg, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: Manguo, server: 36.151.251.23, port: 33681, type: trojan, password: 5fd355da67e5438fd35ace8835ffc516, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
+  - {name: Dushe26, server: 58.152.26.153, port: 443, type: trojan, password: xYfQQFYg, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
+  - {name: Manguo, server: 58.152.53.2, port: 443, type: trojan, password: 5fd355da67e5438fd35ace8835ffc516, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
   - {name: Xiaoyu, server: 144.202.54.42, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
 proxy-groups:
   - name: 🔰 节点选择
@@ -30,7 +30,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - Tube
-      - Dushe07
+      - Dushe26
       - Manguo
       - Xiaoyu
   - name: ♻️ 自动选择
@@ -39,7 +39,7 @@ proxy-groups:
     interval: 300
     proxies:
       - Tube
-      - Dushe07
+      - Dushe26
       - Manguo
       - Xiaoyu
 #  - name: 🎥 NETFLIX
@@ -49,7 +49,7 @@ proxy-groups:
 #      - ♻️ 自动选择
 #      - 🎯 全球直连
 #      - Tube
-#      - Dushe07
+#      - Dushe26
 #  - name: ⛔️ 广告拦截
 #    type: select
 #    proxies:
@@ -69,7 +69,7 @@ proxy-groups:
 #      - ♻️ 自动选择
       - 🎯 全球直连
       - Tube
-      - Dushe07
+      - Dushe26
       - Manguo
       - Xiaoyu
   - name: 🌏 国内媒体
@@ -83,7 +83,7 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - Tube
-      - Dushe07
+      - Dushe26
       - Manguo
       - Xiaoyu
   - name: 📲 电报信息
@@ -92,7 +92,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - Tube
-      - Dushe07
+      - Dushe26
       - Manguo
       - Xiaoyu
 #  - name: 🍎 苹果服务
@@ -102,7 +102,7 @@ proxy-groups:
 #      - 🎯 全球直连
 #      - ♻️ 自动选择
 #      - Tube
-#      - Dushe07
+#      - Dushe26
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -119,7 +119,7 @@ proxy-groups:
       - 🎯 全球直连
 #      - ♻️ 自动选择
       - Tube
-      - Dushe07
+      - Dushe26
       - Manguo
       - Xiaoyu
 rules:
