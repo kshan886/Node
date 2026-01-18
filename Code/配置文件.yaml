@@ -19,11 +19,9 @@ dns:
   fallback: [https://101.101.101.101/dns-query, https://public.dns.iij.jp/dns-query, https://208.67.220.220/dns-query]
   fallback-filter: {geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32, 223.75.236.241/32, 182.43.124.6/32, 106.74.25.198/32], domain: [+.bianyuan.xyz, +.happynothings031.xyz, +.jsdelivr.net, +.proton.me]}
 proxies:
-  - {name: Tube, server: 120.232.154.186, port: 50129, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: 77714131:SZlfpu, obfs-param: "", udp: true}
+  - {name: Tube, server: 120.232.154.186, port: 50129, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: 78121196:56na3o, obfs-param: "", udp: true }
   - {name: Dushe1, server: 52.196.143.203, port: 3582, type: trojan, password: WYOhhOXN, ni: 183.232.139.22, skip-cert-verify: true, udp: true}  
   - {name: Dushe2, server: 37.1.194.9, port: 443, type: trojan, password: WYOhhOXN, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: Manguo, server: 58.152.53.2, port: 443, type: trojan, password: 5fd355da67e5438fd35ace8835ffc516, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: Xiaoyu, server: 144.202.54.42, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -33,8 +31,6 @@ proxy-groups:
       - Tube
       - Dushe1
       - Dushe2
-      - Manguo
-      - Xiaoyu
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -43,8 +39,15 @@ proxy-groups:
       - Tube
       - Dushe1
       - Dushe2
-      - Manguo
-      - Xiaoyu
+  - name: 🎬 油管视频
+    type: select
+    proxies:
+      - 🔰 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - Tube
+      - Dushe1
+      - Dushe2
 #  - name: 🎥 NETFLIX
 #    type: select
 #    proxies:
@@ -53,7 +56,7 @@ proxy-groups:
 #      - 🎯 全球直连
 #      - Tube
 #      - Dushe1
-      - Dushe2
+#      - Dushe2
 #  - name: ⛔️ 广告拦截
 #    type: select
 #    proxies:
@@ -75,8 +78,6 @@ proxy-groups:
       - Tube
       - Dushe1
       - Dushe2
-      - Manguo
-      - Xiaoyu
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -90,8 +91,6 @@ proxy-groups:
       - Tube
       - Dushe1
       - Dushe2
-      - Manguo
-      - Xiaoyu
   - name: 📲 电报信息
     type: select
     proxies:
@@ -100,8 +99,6 @@ proxy-groups:
       - Tube
       - Dushe1
       - Dushe2
-      - Manguo
-      - Xiaoyu
 #  - name: 🍎 苹果服务
 #    type: select
 #    proxies:
@@ -110,7 +107,7 @@ proxy-groups:
 #      - ♻️ 自动选择
 #      - Tube
 #      - Dushe1
-      - Dushe2
+#      - Dushe2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -129,8 +126,6 @@ proxy-groups:
       - Tube
       - Dushe1
       - Dushe2
-      - Manguo
-      - Xiaoyu
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -9385,9 +9380,7 @@ rules:
   - DOMAIN-SUFFIX,wetvinfo.com,🌍 国外媒体
   - IP-CIDR,150.109.28.51/32,🌍 国外媒体,no-resolve
   - DOMAIN-SUFFIX,googlevideo.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
-  - DOMAIN,youtubei.googleapis.com,🌍 国外媒体
   - DOMAIN,yt3.ggpht.com,🌍 国外媒体
   - DOMAIN-SUFFIX,acg.tv,🌏 国内媒体
   - DOMAIN-SUFFIX,acgvideo.com,🌏 国内媒体
@@ -9419,6 +9412,8 @@ rules:
   - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
   - DOMAIN-SUFFIX,youku.com,🌏 国内媒体
   - IP-CIDR,106.11.0.0/16,🌏 国内媒体,no-resolve
+  - DOMAIN-SUFFIX,youtube.com,🎬 油管视频
+  - DOMAIN,youtubei.googleapis.com,🎬 油管视频
   - DOMAIN-SUFFIX,t.me,📲 电报信息
   - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
   - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
