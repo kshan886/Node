@@ -22,7 +22,7 @@ proxies:
   - {name: Tube, server: 103.181.165.171, port: 50132, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: 80742349:GbALfo, obfs-param: "", udp: true }
   - {name: DusheDG1, server: 149.33.33.213, port: 443, type: trojan, password: gckmhPXw, ni: 183.232.139.22, skip-cert-verify: true, udp: true}  
   - {name: DusheDG2, server: 37.1.194.9, port: 443, type: trojan, password: gckmhPXw, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: DusheHK1, server: 54.238.211.1, port: 1491, type: trojan, password: gckmhPXw, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
+  - {name: DusheHK1, server: 52.196.28.128, port: 4183, type: trojan, password: gckmhPXw, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
   - {name: DusheHK2, server: 43.198.227.190, port: 1491, type: trojan, password: RGdtDrTu, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
   - {name: Baima, server: 183.240.187.161, port: 808, type: vless, uuid: 50060511-f144-453f-bfdb-d146b6381bd5, tls: true, alpn: [h2], tfo: false, skip-cert-verify: false, network: h2, h2-opts: {path: /sg96ag1a}}
 proxy-groups:
@@ -31,22 +31,22 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Tube
       - DusheDG1
       - DusheDG2
       - DusheHK1
       - DusheHK2
+      - Tube
       - Baima
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Tube
       - DusheDG1
       - DusheDG2
       - DusheHK1
       - DusheHK2
+      - Tube
       - Baima
   - name: 🎬 油管视频
     type: select
@@ -54,22 +54,22 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Tube
       - DusheDG1
       - DusheDG2
       - DusheHK1
       - DusheHK2
+      - Tube
       - Baima
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Tube
       - DusheDG1
       - DusheDG2
       - DusheHK1
       - DusheHK2
+      - Tube
       - Baima
 #  - name: 🎥 NETFLIX
 #    type: select
@@ -77,11 +77,12 @@ proxy-groups:
 #      - 🔰 节点选择
 #      - ♻️ 自动选择
 #      - 🎯 全球直连
-#      - Tube
 #      - DusheDG1
 #      - DusheDG2
 #      - DusheHK1
 #      - DusheHK2
+#      - Tube
+#      - Baima
 #  - name: ⛔️ 广告拦截
 #    type: select
 #    proxies:
@@ -100,11 +101,11 @@ proxy-groups:
       - 🔰 节点选择
 #      - ♻️ 自动选择
       - 🎯 全球直连
-      - Tube
       - DusheDG1
       - DusheDG2
       - DusheHK1
       - DusheHK2
+      - Tube
       - Baima
   - name: 🌏 国内媒体
     type: select
@@ -116,11 +117,11 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Tube
       - DusheDG1
       - DusheDG2
       - DusheHK1
       - DusheHK2
+      - Tube
       - Baima
 #  - name: 🍎 苹果服务
 #    type: select
@@ -131,8 +132,8 @@ proxy-groups:
 #      - Tube
 #      - DusheDG1
 #      - DusheDG2
-      - DusheHK1
-      - DusheHK2
+#      - DusheHK1
+#      - DusheHK2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,11 +149,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
 #      - ♻️ 自动选择
-      - Tube
       - DusheDG1
       - DusheDG2
       - DusheHK1
       - DusheHK2
+      - Tube
       - Baima
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
