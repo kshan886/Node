@@ -23,8 +23,8 @@ proxies:
   - {name: 🇩🇪DS德国, server: 37.1.194.9, port: 443, type: trojan, password: 8a96cf7176a41ef6382662dbb92c709f, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰DS香港, server: 95.40.76.2, port: 5823, type: trojan, password: 8a96cf7176a41ef6382662dbb92c709f, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵DS日本, server: 52.198.90.187, port: 11533, type: trojan, password: 8a96cf7176a41ef6382662dbb92c709f, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬DS新加坡, server: 18.167.172.213, port: 15363, type: trojan, password: 8a96cf7176a41ef6382662dbb92c709f, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷DS法国, server: 13.231.159.112, port: 44774, type: trojan, password: 8a96cf7176a41ef6382662dbb92c709f, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬DS新加坡, server: 18.167.172.213, port: 28337, type: trojan, password: 8a96cf7176a41ef6382662dbb92c709f, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷DS法国, server: 13.192.165.31, port: 44774, type: trojan, password: 8a96cf7176a41ef6382662dbb92c709f, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸DS美国, server: 13.230.254.47, port: 26862, type: trojan, password: 8a96cf7176a41ef6382662dbb92c709f, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
 #  - {name: Baima, server: 16.163.105.149, port: 504, type: vless, uuid: 50060511-f144-453f-bfdb-d146b6381bd5, tls: true, alpn: [h2], tfo: false, skip-cert-verify: false, network: h2, h2-opts: {path: /sg96ag1a}}
 proxy-groups:
