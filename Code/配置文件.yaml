@@ -20,12 +20,12 @@ dns:
   fallback-filter: {geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32, 223.75.236.241/32, 182.43.124.6/32, 106.74.25.198/32], domain: [+.bianyuan.xyz, +.happynothings031.xyz, +.jsdelivr.net, +.proton.me]}
 proxies:
   - {name: 🌎Tb全球, server: 16.163.105.149, port: 504, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: 81972576:TovSUL, obfs-param: "", udp: true }
-  - {name: 🇩🇪DS德国, server: 37.1.194.9, port: 443, type: trojan, password: 8a96cf7176a41ef6382662dbb92c709f, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰DS香港, server: 18.183.166.27, port: 38312, type: trojan, password: 8a96cf7176a41ef6382662dbb92c709f, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵DS日本, server: 54.65.214.181, port: 32536, type: trojan, password: 8a96cf7176a41ef6382662dbb92c709f, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬DS新加坡, server: 18.162.144.178, port: 1850, type: trojan, password: 8a96cf7176a41ef6382662dbb92c709f, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷DS法国, server: 16.162.119.2, port: 5870, type: trojan, password: 8a96cf7176a41ef6382662dbb92c709f, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸DS美国, server: 13.230.254.47, port: 26862, type: trojan, password: 8a96cf7176a41ef6382662dbb92c709f, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪DS德国, server: 43.198.207.193, port: 44774, type: trojan, password: 3d3f42d28a8186312d0521c9a1bff9d3, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰DS香港, server: 95.40.39.39, port: 1850, type: trojan, password: 3d3f42d28a8186312d0521c9a1bff9d3, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵DS日本, server: 13.158.140.63, port: 21508, type: trojan, password: 3d3f42d28a8186312d0521c9a1bff9d3, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬DS新加坡, server: 95.40.57.225, port: 15363, type: trojan, password: 3d3f42d28a8186312d0521c9a1bff9d3, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷DS法国, server: 95.40.39.39, port: 40781, type: trojan, password: 3d3f42d28a8186312d0521c9a1bff9d3, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸DS美国, server: 43.199.229.10, port: 5870, type: trojan, password: 3d3f42d28a8186312d0521c9a1bff9d3, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
 #  - {name: Baima, server: 16.163.105.149, port: 504, type: vless, uuid: 50060511-f144-453f-bfdb-d146b6381bd5, tls: true, alpn: [h2], tfo: false, skip-cert-verify: false, network: h2, h2-opts: {path: /sg96ag1a}}
 proxy-groups:
   - name: 🔰 节点选择
