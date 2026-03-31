@@ -1,4 +1,4 @@
-mixed-port: 504
+mixed-port: 22075
 allow-lan: false
 mode: Rule
 log-level: info
@@ -19,26 +19,16 @@ dns:
   fallback: [https://101.101.101.101/dns-query, https://public.dns.iij.jp/dns-query, https://208.67.220.220/dns-query]
   fallback-filter: {geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32, 223.75.236.241/32, 182.43.124.6/32, 106.74.25.198/32], domain: [+.bianyuan.xyz, +.happynothings031.xyz, +.jsdelivr.net, +.proton.me]}
 proxies:
-  - {name: 🌎Tb全球, server: 16.163.105.149, port: 504, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: 81972576:TovSUL, obfs-param: "", udp: true }
-  - {name: 🇩🇪DS德国, server: 43.198.207.193, port: 44774, type: trojan, password: 3d3f42d28a8186312d0521c9a1bff9d3, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰DS香港, server: 95.40.39.39, port: 1850, type: trojan, password: 3d3f42d28a8186312d0521c9a1bff9d3, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵DS日本, server: 13.158.140.63, port: 21508, type: trojan, password: 3d3f42d28a8186312d0521c9a1bff9d3, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬DS新加坡, server: 95.40.57.225, port: 15363, type: trojan, password: 3d3f42d28a8186312d0521c9a1bff9d3, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷DS法国, server: 95.40.39.39, port: 40781, type: trojan, password: 3d3f42d28a8186312d0521c9a1bff9d3, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸DS美国, server: 43.199.229.10, port: 5870, type: trojan, password: 3d3f42d28a8186312d0521c9a1bff9d3, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
-#  - {name: Baima, server: 16.163.105.149, port: 504, type: vless, uuid: 50060511-f144-453f-bfdb-d146b6381bd5, tls: true, alpn: [h2], tfo: false, skip-cert-verify: false, network: h2, h2-opts: {path: /sg96ag1a}}
+  - {name: 🌎Tb全球, server: 43.199.143.161, port: 22075, type: ssr, cipher: chacha20, password: mPQ5C9, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: 81972576:TovSUL, obfs-param: "", udp: true }
+  - {name: 🌎Ds全球, server: 43.199.143.161, port: 22075, type: trojan, password: ad7790b6ff44242100398ac533104784, ni: 183.232.139.22, skip-cert-verify: true, udp: true}
+#  - {name: Baima, server: 43.199.143.161, port: 22075, type: vless, uuid: 50060511-f144-453f-bfdb-d146b6381bd5, tls: true, alpn: [h2], tfo: false, skip-cert-verify: false, network: h2, h2-opts: {path: /sg96ag1a}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
 #      - ♻️ 自动选择
-      - 🎯 全球直连
-      - 🇩🇪DS德国
-      - 🇫🇷DS法国
-      - 🇭🇰DS香港
-      - 🇯🇵DS日本
-      - 🇸🇬DS新加坡
-      - 🇺🇸DS美国
+#      - 🎯 全球直连
+      - 🌎Ds全球
       - 🌎Tb全球
 #      - Baima
 #  - name: ♻️ 自动选择
@@ -46,12 +36,7 @@ proxy-groups:
 #    url: http://www.gstatic.com/generate_204
 #    interval: 200
 #    proxies:
-#      - 🇩🇪DS德国
-#      - 🇫🇷DS法国
-#      - 🇭🇰DS香港
-#      - 🇯🇵DS日本
-#      - 🇸🇬DS新加坡
-#      - 🇺🇸DS美国
+#      - 🌎Ds全球
 #      - 🌎Tb全球
 #      - Baima
   - name: 🎬 油管视频
@@ -60,12 +45,7 @@ proxy-groups:
       - 🔰 节点选择
 #      - ♻️ 自动选择
 #      - 🎯 全球直连
-      - 🇩🇪DS德国
-      - 🇫🇷DS法国
-      - 🇭🇰DS香港
-      - 🇯🇵DS日本
-      - 🇸🇬DS新加坡
-      - 🇺🇸DS美国
+      - 🌎Ds全球
       - 🌎Tb全球
 #      - Baima
   - name: 📲 电报信息
@@ -73,12 +53,7 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
 #      - 🎯 全球直连
-      - 🇩🇪DS德国
-      - 🇫🇷DS法国
-      - 🇭🇰DS香港
-      - 🇯🇵DS日本
-      - 🇸🇬DS新加坡
-      - 🇺🇸DS美国
+      - 🌎Ds全球
       - 🌎Tb全球
 #      - Baima
 #  - name: 🎥 NETFLIX
@@ -117,12 +92,7 @@ proxy-groups:
       - 🔰 节点选择
 #      - ♻️ 自动选择
 #      - 🎯 全球直连
-      - 🇩🇪DS德国
-      - 🇫🇷DS法国
-      - 🇭🇰DS香港
-      - 🇯🇵DS日本
-      - 🇸🇬DS新加坡
-      - 🇺🇸DS美国
+      - 🌎Ds全球
       - 🌎Tb全球
 #      - Baima
   - name: 🌏 国内媒体
@@ -135,12 +105,7 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇩🇪DS德国
-      - 🇫🇷DS法国
-      - 🇭🇰DS香港
-      - 🇯🇵DS日本
-      - 🇸🇬DS新加坡
-      - 🇺🇸DS美国
+      - 🌎Ds全球
       - 🌎Tb全球
 #      - Baima
 #  - name: 🍎 苹果服务
@@ -150,12 +115,7 @@ proxy-groups:
 #      - 🎯 全球直连
 #      - ♻️ 自动选择
 #      - 🌎Tb全球
-#      - 🇩🇪DS德国
-#      - 🇫🇷DS法国
-#      - 🇭🇰DS香港
-#      - 🇯🇵DS日本
-#      - 🇸🇬DS新加坡
-#      - 🇺🇸DS美国
+#      - 🌎Ds全球
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -171,12 +131,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
 #      - ♻️ 自动选择
-      - 🇩🇪DS德国
-      - 🇫🇷DS法国
-      - 🇭🇰DS香港
-      - 🇯🇵DS日本
-      - 🇸🇬DS新加坡
-      - 🇺🇸DS美国
+      - 🌎Ds全球
       - 🌎Tb全球
 #      - Baima
 rules:
